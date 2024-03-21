@@ -1,4 +1,4 @@
-port pid,utc_created,utc_updated,country,country_code,indicator_code,indicator,value,year
+id,utc_created,utc_updated,country,country_code,indicator_code,indicator,value,year
 1,"2016-01-07 10:10:52.689964","2016-01-07 10:10:52.690139",Afghanistan,AFG,72206,"HDI: Health index",0.327,1980
 2,"2016-01-07 10:10:52.689964","2016-01-07 10:10:52.690139",Afghanistan,AFG,72206,"HDI: Health index",0.375,1985
 3,"2016-01-07 10:10:52.689964","2016-01-07 10:10:52.690139",Afghanistan,AFG,72206,"HDI: Health index",0.44,1990
