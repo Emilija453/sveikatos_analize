@@ -1,7 +1,3 @@
-# - ryšys tarp bendro indekso (vidurkio) ir metu
-# - ryšys tarp Baltijos šalių indekso (vidurkio) ir metu
-# - ryšys tarp Skandinavijos šalių indekso (vidurkio) ir metu
-
 import pandas as pd
 
 pd.set_option('display.max_columns', 10)
@@ -17,6 +13,6 @@ baltijos_saliu_indeksai = df.loc[(df['country'] == 'Lithuania') | (df['country']
 baltijos_saliu_koreliacija = baltijos_saliu_indeksai['year'].corr(baltijos_saliu_indeksai['value']).round(2)
 print('Baltijos šalių sveikatos indekso priklausomybė nuo metų: ', baltijos_saliu_koreliacija)
 
-skandinavijos_saliu_indeksai = df.loc[(df['country'] == 'Sweden') | (df['country'] == 'Norway') | (df['country'] == 'Finland')]
+skandinavijos_saliu_indeksai = df.loc[(df['country'] == 'Sweden') | (df['country'] == 'Norway') | (df['country'] == 'Denmark')]
 skandinavijos_saliu_koreliacija = skandinavijos_saliu_indeksai['year'].corr(skandinavijos_saliu_indeksai['value']).round(2)
 print('Skandinavijos šalių sveikatos indekso priklausomybė nuo metų: ', skandinavijos_saliu_koreliacija)
