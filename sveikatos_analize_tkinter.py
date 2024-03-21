@@ -54,7 +54,6 @@ root.title("HDI Analizė")
 root.geometry("800x800")
 
 ttk.Label(root, text="Pasirinkite Metų Intervalą:").grid(row=0, column=0)
-
 metu_intervalo_combobox = ttk.Combobox(root, values=['1980-1985', '1990-1995', '2000-2005', '2010-2013'])
 metu_intervalo_combobox.grid(row=0, column=1)
 metu_intervalo_combobox.current(0)
