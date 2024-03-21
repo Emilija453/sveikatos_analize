@@ -149,5 +149,8 @@ plt.title('Baltijos saliu vidurkiai')
 plt.xlabel('ŠALYS')
 plt.ylabel('Value')
 plt.show()
+<<<<<<< HEAD
 
 print('\n')
+=======
+>>>>>>> 60633d77001213e4fdae4e121264e17488d34e31
