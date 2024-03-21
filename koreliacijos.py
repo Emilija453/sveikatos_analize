@@ -19,3 +19,4 @@ skandinavijos_saliu_indeksai = df.loc[(df['country'] == 'Sweden') | (df['country
 skandinavijos_saliu_koreliacija = (skandinavijos_saliu_indeksai['year'].corr(skandinavijos_saliu_indeksai['value']).
                                    round(2))
 print('Skandinavijos šalių sveikatos indekso priklausomybė nuo metų: ', skandinavijos_saliu_koreliacija)
+print('\n')
