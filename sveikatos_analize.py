@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import requests
 
 download_url = "https://dw.euro.who.int/api/v3/export/download/912e2ab65389408ead82ca5be8ed2cac"
@@ -14,3 +15,10 @@ if response.status_code == 200:
     print("File downloaded successfully.")
 else:
     print(f"Failed to download the file. Status code: {response.status_code}")
+=======
+# Labas rytas :)
+
+def test1():
+    return test1()
+
+>>>>>>> c965b199b04774984222c330ae81c2fdf957faf6

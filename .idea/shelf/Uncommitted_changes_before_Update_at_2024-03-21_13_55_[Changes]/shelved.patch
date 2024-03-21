@@ -1,0 +1,26 @@
+Index: koreliacijos.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pandas as pd\r\n\r\npd.set_option('display.max_columns', 10)\r\npd.set_option('display.max_rows', 500)\r\npd.set_option('display.width', 500)\r\n\r\ndf = pd.read_csv('health-index-1.csv')\r\n\r\nbendrakoreliacija = df['year'].corr(df['value']).round(2)\r\nprint('Visų šalių sveikatos indekso priklausomybė nuo metų: ', bendrakoreliacija)\r\n\r\nbaltijos_saliu_indeksai = df.loc[(df['country'] == 'Lithuania') | (df['country'] == 'Latvia') | (df['country'] == 'Estonia')]\r\nbaltijos_saliu_koreliacija = baltijos_saliu_indeksai['year'].corr(baltijos_saliu_indeksai['value']).round(2)\r\nprint('Baltijos šalių sveikatos indekso priklausomybė nuo metų: ', baltijos_saliu_koreliacija)\r\n\r\nskandinavijos_saliu_indeksai = df.loc[(df['country'] == 'Sweden') | (df['country'] == 'Norway') | (df['country'] == 'Denmark')]\r\nskandinavijos_saliu_koreliacija = skandinavijos_saliu_indeksai['year'].corr(skandinavijos_saliu_indeksai['value']).round(2)\r\nprint('Skandinavijos šalių sveikatos indekso priklausomybė nuo metų: ', skandinavijos_saliu_koreliacija)\r\n
+===================================================================
+diff --git a/koreliacijos.py b/koreliacijos.py
+--- a/koreliacijos.py	
++++ b/koreliacijos.py	
+@@ -9,10 +9,14 @@
+ bendrakoreliacija = df['year'].corr(df['value']).round(2)
+ print('Visų šalių sveikatos indekso priklausomybė nuo metų: ', bendrakoreliacija)
+ 
+-baltijos_saliu_indeksai = df.loc[(df['country'] == 'Lithuania') | (df['country'] == 'Latvia') | (df['country'] == 'Estonia')]
++baltijos_saliu_indeksai = df.loc[(df['country'] == 'Lithuania') | (df['country'] == 'Latvia')
++                                 | (df['country'] == 'Estonia')]
+ baltijos_saliu_koreliacija = baltijos_saliu_indeksai['year'].corr(baltijos_saliu_indeksai['value']).round(2)
+ print('Baltijos šalių sveikatos indekso priklausomybė nuo metų: ', baltijos_saliu_koreliacija)
+ 
+-skandinavijos_saliu_indeksai = df.loc[(df['country'] == 'Sweden') | (df['country'] == 'Norway') | (df['country'] == 'Denmark')]
+-skandinavijos_saliu_koreliacija = skandinavijos_saliu_indeksai['year'].corr(skandinavijos_saliu_indeksai['value']).round(2)
++skandinavijos_saliu_indeksai = df.loc[(df['country'] == 'Sweden') | (df['country'] == 'Norway')
++                                      | (df['country'] == 'Denmark')]
++skandinavijos_saliu_koreliacija = (skandinavijos_saliu_indeksai['year'].corr(skandinavijos_saliu_indeksai['value']).
++                                   round(2))
+ print('Skandinavijos šalių sveikatos indekso priklausomybė nuo metų: ', skandinavijos_saliu_koreliacija)
++print('\n')
