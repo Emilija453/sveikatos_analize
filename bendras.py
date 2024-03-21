@@ -92,7 +92,7 @@ print(f'Skandinavijos šalių indekso vidurkis 2000 - 2005 m.laikotarpiu :\n{sal
 periodas_2010_2013 = skandinavijos_salys[(skandinavijos_salys['year'] >= 2010) & (skandinavijos_salys['year'] <= 2013)]
 # print(periodas_2010_2013)
 
-saliu_indekso_vidurkis_2010_2013 = periodas_1990_1995.groupby('country')['value'].mean()
+saliu_indekso_vidurkis_2010_2013 = periodas_2010_2013.groupby('country')['value'].mean()
 print(f'Skandinavijos šalių indekso vidurkis 2010 - 2013 m.laikotarpiu :\n{saliu_indekso_vidurkis_2010_2013}')
 
 "KORELIACIJOS"
