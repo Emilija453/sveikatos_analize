@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ccb27783-18b5-4be4-8ce3-86db780247e9" name="Changes" comment="test3" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="93aaf956-4dc2-44d3-ad09-d37d45f3a26a" name="Changes" comment="betkas" />
+=======
+    <list default="true" id="ba4928aa-dcb0-4293-9fd4-0112780ac64c" name="Changes" comment="test1">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Darbas1/analize_saliu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Darbas1/health-index-1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sveikatos_analize.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sveikatos_analize.iml" afterDir="false" />
+    </list>
+>>>>>>> ed9752f59b0375014ed1e45783961222c5aced87
+>>>>>>> 4621f8f5ed15c1017f351c767fabd7513bdd9177
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +36,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -28,15 +47,126 @@
     "Python.alfredo_test.executor": "Run",
     "last_opened_file_path": "C:/Users/Vartotojas/Documents/GitHub/sveikatos_analize",
     "node.js.selected.package.tslint": "(autodetect)"
+=======
+<<<<<<< HEAD
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+=======
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+>>>>>>> ed9752f59b0375014ed1e45783961222c5aced87
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+<<<<<<< HEAD
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2dzeIiYoQny7BMPR2cZWkxIrAGY" />
+=======
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2dzP3hsNMh4efl9wznVczpWwO1U" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+>>>>>>> ed9752f59b0375014ed1e45783961222c5aced87
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+<<<<<<< HEAD
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.Skandinavijos salys.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Rasa/Documents/GitHub/sveikatos_analize",
+=======
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.analize_saliu.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Vartotojas/Documents/GitHub/sveikatos_analize/Darbas1",
+>>>>>>> ed9752f59b0375014ed1e45783961222c5aced87
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 4621f8f5ed15c1017f351c767fabd7513bdd9177
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\Vartotojas\Documents\GitHub\sveikatos_analize" />
+=======
+<<<<<<< HEAD
+      <recent name="C:\Users\Rasa\Documents\GitHub\sveikatos_analize" />
+=======
+      <recent name="C:\Users\Vartotojas\Documents\GitHub\sveikatos_analize\Darbas1" />
+>>>>>>> ed9752f59b0375014ed1e45783961222c5aced87
+>>>>>>> 4621f8f5ed15c1017f351c767fabd7513bdd9177
     </key>
   </component>
   <component name="TaskManager">
+<<<<<<< HEAD
     <task id="LOCAL−00001" summary="test3">
+=======
+    <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
+      <changelist id="93aaf956-4dc2-44d3-ad09-d37d45f3a26a" name="Changes" comment="" />
+      <created>1711015255491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711015255491</updated>
+      <workItem from="1711015256862" duration="1798000" />
+      <workItem from="1711017075461" duration="321000" />
+    </task>
+    <task id="LOCAL-00001" summary="betkas">
+      <option name="closed" value="true" />
+      <created>1711015382798</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711015382798</updated>
+    </task>
+    <task id="LOCAL-00002" summary="betkas">
+      <option name="closed" value="true" />
+      <created>1711015489825</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711015489825</updated>
+    </task>
+    <task id="LOCAL-00003" summary="betkas">
+      <option name="closed" value="true" />
+      <created>1711016768456</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711016768456</updated>
+=======
+      <changelist id="ba4928aa-dcb0-4293-9fd4-0112780ac64c" name="Changes" comment="" />
+      <created>1711007735416</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711007735416</updated>
+      <workItem from="1711007736685" duration="7227000" />
+    </task>
+    <task id="LOCAL−00001" summary="test1">
+>>>>>>> 4621f8f5ed15c1017f351c767fabd7513bdd9177
       <option name="closed" value="true" />
       <created>1711016437089</created>
       <option name="number" value="LOCAL−00001" />
@@ -50,15 +180,41 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1711017157479</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="3" />
+=======
+    <task id="LOCAL−00003" summary="test1">
+      <option name="closed" value="true" />
+      <created>1711015502401</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1711015502401</updated>
+>>>>>>> ed9752f59b0375014ed1e45783961222c5aced87
+    </task>
+    <option name="localTasksCounter" value="4" />
+>>>>>>> 4621f8f5ed15c1017f351c767fabd7513bdd9177
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="test3" />
     <option name="LAST_COMMIT_MESSAGE" value="test3" />
+=======
+<<<<<<< HEAD
+    <MESSAGE value="betkas" />
+    <option name="LAST_COMMIT_MESSAGE" value="betkas" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sveikatos_analize$Skandinavijos_salys.coverage" NAME="Skandinavijos salys Coverage Results" MODIFIED="1711016754031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="test1" />
+    <option name="LAST_COMMIT_MESSAGE" value="test1" />
+>>>>>>> 4621f8f5ed15c1017f351c767fabd7513bdd9177
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/sveikatos_analize$alfredo_test.coverage" NAME="alfredo_test Coverage Results" MODIFIED="1711021454857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sveikatos_analize$analize_saliu.coverage" NAME="analize_saliu Coverage Results" MODIFIED="1711015315515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Darbas1" />
+>>>>>>> ed9752f59b0375014ed1e45783961222c5aced87
   </component>
 </project>
