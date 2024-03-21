@@ -138,3 +138,4 @@ canvas.get_tk_widget().configure(width=800, height=700)
 
 atnaujinti_grafika()
 root.mainloop()
+
