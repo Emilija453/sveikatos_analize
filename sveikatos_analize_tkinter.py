@@ -149,7 +149,6 @@ def atnaujinti_grafika():
 
      
 
-
 #TKINTER 
 root = tk.Tk()
 root.title("HDI Analizė")
