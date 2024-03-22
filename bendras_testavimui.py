@@ -6,6 +6,7 @@ pd.set_option('display.max_columns', 10)
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.width', 500)
 
+
 def df_from_csv(csv_file):
     df = pd.read_csv(csv_file)
     return df
@@ -109,17 +110,11 @@ def koreliacijos(df):
 
 def indeksu_pokyciu_grafikas(df):
     bendras_saliu_pokytis = df.groupby('year')['value'].mean().round(2).pct_change()
-    # baltijos_saliu_pokytis = baltijos.pct_change()
-    # skandinavijos_saliu_pokytis = (skandinavijos.pct_change()) * 100
-
     plt.figure(figsize=(14, 8))
-    plt.plot(bendras_saliu_pokytis, label='Visų šalių')
-    # plt.plot(baltijos_saliu_pokytis, label='Baltijos šalių')
-    # plt.plot(skandinavijos_saliu_pokytis, label='Skandinavijos šalių')
+    plt.plot(bendras_saliu_pokytis)
     plt.title('Sveikatos indekso pokyčio tendencijos')
     plt.xlabel('Metai')
     plt.ylabel('Pokytis proc.')
-    plt.legend()
     plt.show()
 
 
