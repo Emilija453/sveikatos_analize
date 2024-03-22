@@ -2,11 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-pd.set_option('display.max_columns', 10)
-pd.set_option('display.max_rows', 500)
-pd.set_option('display.width', 500)
-
-
 def df_from_csv(csv_file):
     df = pd.read_csv(csv_file)
     return df
@@ -28,8 +23,7 @@ def bendras_indeksas(df):
 
 
 def baltijos_saliu_indeksas(df):
-    baltijos_salys = df.loc[(df['country'] == 'Lithuania') | (df['country'] == 'Latvia') | (df['country'] == 'Estonia')]
-
+    baltijos_salys = df[(df['country'] == 'Lithuania') | (df['country'] == 'Latvia') | (df['country'] == 'Estonia')]
     laikotarpis_1980_1985 = baltijos_salys[(baltijos_salys['year'] >= 1980) & (baltijos_salys['year'] <= 1985)]
     laikotarpis_1990_1995 = baltijos_salys[(baltijos_salys['year'] >= 1990) & (baltijos_salys['year'] <= 1995)]
     laikotarpis_2000_2005 = baltijos_salys[(baltijos_salys['year'] >= 2000) & (baltijos_salys['year'] <= 2005)]
@@ -48,6 +42,7 @@ def baltijos_saliu_indeksas(df):
     baltijos_saliu_indekso_df.rename(columns={'Estonia': 'Estija', 'Latvia': 'Latvija', 'Lithuania': 'Lietuva'},
                                      inplace=True)
     print('\nBaltijos šalių sveikatos indeksas\n', baltijos_saliu_indekso_df)
+    baltijos_saliu_indekso_df.to_csv('baltijos.csv')
     return baltijos_saliu_indekso_df
 
 
