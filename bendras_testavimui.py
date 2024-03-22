@@ -145,4 +145,5 @@ def main():
     indeksu_pokyciu_grafikas(df)
     baltijos_indekso_grafikas(baltijos)
 
-main()
+if __name__ == '__main__':
+    main()
