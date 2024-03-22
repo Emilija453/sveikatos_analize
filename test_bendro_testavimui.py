@@ -2,7 +2,6 @@ import pytest
 import pandas as pd
 from bendras_testavimui import df_from_csv
 
-@pytest.fixture
 
 def test_df_from_csv():
     df_baltic = 'test_Baltic_counrties.csv'
