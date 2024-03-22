@@ -72,95 +72,77 @@ def skandinavijos_saliu_indeksas(df):
     return skandinavijos_saliu_indekso_df
 
 
+def sveikatos_indeksu_grafikas(skandinavijos_saliu_indekso_df, baltijos_saliu_indekso_df):
+    plt.figure(figsize=(14, 8))
+    plt.plot(skandinavijos_saliu_indekso_df, label=['Danija', 'Norvegija', 'Švedija'])
+    plt.plot(baltijos_saliu_indekso_df, label=['Estija', 'Latvija', 'Lietuva'])
+    plt.title('Sveikatos indekso vidurkio tendencijos')
+    plt.xlabel('Laikotarpiai')
+    plt.ylabel('Sveikatos indekso vidurkis')
+    plt.legend()
+    plt.show()
 
 
-csv_file = 'health-index-1.csv'
-df = df_from_csv(csv_file)
-bendras_indeksas(df)
-skandinavijos_saliu_indeksas(df)
-baltijos_saliu_indeksas(df)
+def sveikatos_indekso_top_salys(df):
+    median_by_country = df.groupby('country')['value'].mean().round(2)
+    top_five = median_by_country.nlargest(5)
+    worst_five = median_by_country.nsmallest(5)
+    print(f'\nAukščiausi HDI:\n{top_five}')
+    print(f'\nŽemiausi HDI:\n{worst_five}')
+    return top_five, worst_five
+
+def koreliacijos(df):
+    bendrakoreliacija = df['year'].corr(df['value']).round(2)
+    baltijos_saliu_indeksai = df.loc[(df['country'] == 'Lithuania') | (df['country'] == 'Latvia')
+                                     | (df['country'] == 'Estonia')]
+    baltijos_saliu_koreliacija = baltijos_saliu_indeksai['year'].corr(baltijos_saliu_indeksai['value']).round(2)
+    skandinavijos_saliu_indeksai = df.loc[(df['country'] == 'Sweden') | (df['country'] == 'Norway')
+                                          | (df['country'] == 'Denmark')]
+    skandinavijos_saliu_koreliacija = (skandinavijos_saliu_indeksai['year'].corr(skandinavijos_saliu_indeksai['value']).
+                                       round(2))
+    koreliacijos = [['Baltijos šalys', baltijos_saliu_koreliacija],
+                    ['Skandinavijos šalys', skandinavijos_saliu_koreliacija], ['Visų šalių', bendrakoreliacija]]
+    koreliaciju_df = pd.DataFrame(koreliacijos, columns=['Regionas', 'Koreliacija'])
+    koreliaciju_df.set_index('Regionas', inplace=True)
+    print('\nKoreliacija - sveikatos indekso priklausomybė nuo metų:\n', koreliaciju_df)
+    return koreliaciju_df
+
+def indeksu_pokyciu_grafikas(df):
+    bendras_saliu_pokytis = df.groupby('year')['value'].mean().round(2).pct_change()
+    # baltijos_saliu_pokytis = baltijos.pct_change()
+    # skandinavijos_saliu_pokytis = (skandinavijos.pct_change()) * 100
+
+    plt.figure(figsize=(14, 8))
+    plt.plot(bendras_saliu_pokytis, label='Visų šalių')
+    # plt.plot(baltijos_saliu_pokytis, label='Baltijos šalių')
+    # plt.plot(skandinavijos_saliu_pokytis, label='Skandinavijos šalių')
+    plt.title('Sveikatos indekso pokyčio tendencijos')
+    plt.xlabel('Metai')
+    plt.ylabel('Pokytis proc.')
+    plt.legend()
+    plt.show()
 
 
+def baltijos_indekso_grafikas(baltijos):
+    plt.figure(figsize=(20, 12))
+    baltijos.plot(kind='bar', label=['Estija', 'Latvija', 'Lietuva'])
+    plt.title('Baltijos šalių sveikatos indekso vidurkiai')
+    plt.xlabel('Laikotarpis')
+    plt.ylabel('Sveikatos indekso vidurkis')
+    plt.xticks(rotation=0)
+    plt.show()
 
-#
-# """SVEIKATOS INDEKSŲ TENDENCIJŲ GRAFIKAS"""
-# plt.figure(figsize=(14, 8))
-# plt.plot(skandinavijos_saliu_indekso_df, label=['Danija', 'Norvegija', 'Švedija'])
-# plt.plot(baltijos_saliu_indekso_df, label=['Estija', 'Latvija', 'Lietuva'])
-# plt.title('Sveikatos indekso vidurkio tendencijos')
-# plt.xlabel('Laikotarpiai')
-# plt.ylabel('Sveikatos indekso vidurkis')
-# plt.legend()
-# plt.show()
-#
-# """SVEIKATOS INDEKSAI PAGAL ŠALIS. TOP ŠALYS"""
-# median_by_country_1980_1985 = years_1980_1985.groupby('country')['value'].mean()
-# top_five_1980_1985 = median_by_country_1980_1985.nlargest(5)
-# worst_five_1980_1985 = median_by_country_1980_1985.nsmallest(5)
-# print(f'\nAukščiausi HDI 1980-1985 metais:\n{top_five_1980_1985}')
-# print(f'\nŽemiausi HDI 1980-1985 metais:\n{worst_five_1980_1985}')
-#
-# # 1990-1995
-# median_by_country_1990_1995 = years_1990_1995.groupby('country')['value'].mean()
-# top_five_1990_1995 = median_by_country_1990_1995.nlargest(5)
-# worst_five_1990_1995 = median_by_country_1990_1995.nsmallest(5)
-# print(f'\nAukščiausi HDI 1990-1995 metais:\n{top_five_1990_1995}')
-# print(f'\nŽemiausi HDI 1990-1995 metais:\n{worst_five_1990_1995}')
-#
-# # 2000-2005
-# median_by_country_2000_2005 = years_2000_2005.groupby('country')['value'].mean()
-# top_five_2000_2005 = median_by_country_2000_2005.nlargest(5)
-# worst_five_2000_2005 = median_by_country_2000_2005.nsmallest(5)
-# print(f'\nAukščiausi HDI 2000-2005 metais:\n{top_five_2000_2005}')
-# print(f'\nŽemiausi HDI 2000-2005 metais:\n{worst_five_2000_2005}')
-#
-# # 2010-2013
-# median_by_country_2010_2013 = years_2010_2013.groupby('country')['value'].mean()
-# top_five_2010_2013 = median_by_country_2010_2013.nlargest(5)
-# worst_five_2010_2013 = median_by_country_2010_2013.nsmallest(5)
-# print(f'\nAukščiausi HDI 2010-2013 metais:\n{top_five_2010_2013}')
-# print(f'\nŽemiausi HDI 2010-2013 metais:\n{worst_five_2010_2013}')
-#
-#
-# """KORELIACIJOS"""
-# bendrakoreliacija = df['year'].corr(df['value']).round(2)
-#
-# baltijos_saliu_indeksai = df.loc[(df['country'] == 'Lithuania') | (df['country'] == 'Latvia')
-#                                  | (df['country'] == 'Estonia')]
-# baltijos_saliu_koreliacija = baltijos_saliu_indeksai['year'].corr(baltijos_saliu_indeksai['value']).round(2)
-#
-# skandinavijos_saliu_indeksai = df.loc[(df['country'] == 'Sweden') | (df['country'] == 'Norway')
-#                                       | (df['country'] == 'Denmark')]
-# skandinavijos_saliu_koreliacija = (skandinavijos_saliu_indeksai['year'].corr(skandinavijos_saliu_indeksai['value']).
-#                                    round(2))
-#
-# koreliacijos = [['Baltijos šalys', baltijos_saliu_koreliacija],
-#                 ['Skandinavijos šalys', skandinavijos_saliu_koreliacija], ['Visų šalių', bendrakoreliacija]]
-# koreliaciju_df = pd.DataFrame(koreliacijos, columns=['Regionas', 'Koreliacija'])
-# koreliaciju_df.set_index('Regionas', inplace=True)
-# print('\nKoreliacija - sveikatos indekso priklausomybė nuo metų:\n', koreliaciju_df)
-#
-#
-# """SVEIKATOS INDEKSŲ POKYČIAI PROC. SU GRAFIKU"""
-# bendras_saliu_pokytis = df.groupby('year')['value'].mean().round(2).pct_change()
-# baltijos_saliu_pokytis = baltijos_saliu_indeksai.groupby('year')['value'].mean().round(2).pct_change()
-# skandinavijos_saliu_pokytis = (skandinavijos_saliu_indeksai.groupby('year')['value'].mean().round(2).pct_change()) * 100
-#
-# plt.figure(figsize=(14, 8))
-# plt.plot(bendras_saliu_pokytis, label='Visų šalių')
-# plt.plot(baltijos_saliu_pokytis, label='Baltijos šalių')
-# plt.plot(skandinavijos_saliu_pokytis, label='Skandinavijos šalių')
-# plt.title('Sveikatos indekso pokyčio tendencijos')
-# plt.xlabel('Metai')
-# plt.ylabel('Pokytis proc.')
-# plt.legend()
-# plt.show()
-#
-# """BALTIJOS ŠALIŲ SVEIKATOS INDEKSO VIDURKIS SKIRTINGAIS LAIKOTARPIAIS GRAFIKAS"""
-# plt.figure(figsize=(20, 12))
-# baltijos_saliu_indekso_df.plot(kind='bar', label=['Estija', 'Latvija', 'Lietuva'])
-# plt.title('Baltijos šalių sveikatos indekso vidurkiai')
-# plt.xlabel('Laikotarpis')
-# plt.ylabel('Sveikatos indekso vidurkis')
-# plt.xticks(rotation=0)
-# plt.show()
+
+def main():
+    csv_file = 'health-index-1.csv'
+    df = df_from_csv(csv_file)
+    bendras_indeksas(df)
+    baltijos = baltijos_saliu_indeksas(df)
+    skandinavijos = skandinavijos_saliu_indeksas(df)
+    sveikatos_indeksu_grafikas(skandinavijos, baltijos)
+    sveikatos_indekso_top_salys(df)
+    koreliacijos(df)
+    indeksu_pokyciu_grafikas(df)
+    baltijos_indekso_grafikas(baltijos)
+
+main()
