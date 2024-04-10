@@ -23,6 +23,7 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 
+
 plt.scatter(df_filtered_sorted['year'], df_filtered_sorted['value'], color='blue', label='Mokymo duomenys', s=10)
 plt.plot(X_test['year'], y_pred, linestyle='--', marker='o', color='red', label='Prognoze')
 plt.xlabel('Metai')
