@@ -22,11 +22,18 @@ Naudojant LinearRegression:
 Modelio metrikų ivertinimas:
 
 MSE:  0.0011604802650220872
+
 R2:  0.9496641160143532
+
 RMSE:  0.034065822535528
+
 Cross Validation Scores:  [0.94966412 0.93233879 0.93261997 0.94692378 0.92734106]
+
 Average CV Score:  0.9377775434590931
+
 Number of CV Scores used in Average:  5
+
+
 
 Naudojant K-means:
 
@@ -35,6 +42,7 @@ Naudojant K-means:
 Modelio metrikų ivertinimas:
 
 mse 0.021261494126798057
+
 r2 0.07778173055993431
 
 2 clusters silhouette score: 0.63
@@ -48,6 +56,8 @@ r2 0.07778173055993431
 10 clusters silhouette score: 0.54
 
 The best silhouette score is with 3 clusters
+
+
 
 Naudojant RandomForest:
 
