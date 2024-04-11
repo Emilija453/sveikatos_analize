@@ -1,13 +1,15 @@
-Komandinis darbas, sveikatos indekso analizė:
+Komandinis darbas, sveikatos indekso analizė ✔
 
 ⫸ Visos šalys
 
 ![img_2.png](img_2.png)
 
+______________________________________________________________________
 ⫸ Baltijos ir Skandinavijos šalys
 
 ![img_1.png](img_1.png)
 
+______________________________________________________________________
 ⫸ Baltijos šalys
 
 ![img.png](img.png)
