@@ -2,18 +2,16 @@ Komandinis darbas, sveikatos indekso analizė:
 
 ⫸ Visos šalys
 
-⫸ Baltijos šalys
+![img_2.png](img_2.png)
 
-⫸ Skandinavijos šalys
-
-⫸ Pateikti grafikai ir vizualizacijos programa
-
+⫸ Baltijos ir Skandinavijos šalys
 
 ![img_1.png](img_1.png)
 
+⫸ Baltijos šalys
+
 ![img.png](img.png)
 
-![img_2.png](img_2.png)
 
 ______________________________________________________________________
 Gyventojų Sveikatos Duomenų Analizė (Duomenų paruošimas mašininiam mokymui, mašininio mokymo modelių pasirinkimas,
