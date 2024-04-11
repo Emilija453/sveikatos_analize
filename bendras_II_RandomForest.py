@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.metrics import recall_score, precision_score, f1_score
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.preprocessing import LabelEncoder
@@ -33,3 +33,18 @@ plt.xlabel('Svarbumas')
 plt.ylabel('Parametras')
 sns.barplot(x=importances[indices], y=X_train.columns[indices])
 plt.show()
+
+param_grid = {
+    'n_estimators': [100, 200, 300],  #medziu sk
+    'max_depth': [None, 10, 20],  # gylis
+}
+grid_search = GridSearchCV(estimator=RandomForestRegressor(random_state=42),
+                           param_grid=param_grid,
+                           cv=5,
+                           scoring='neg_mean_squared_error', #kuo reiksme mazesne, tuo modelis geresnis
+                           n_jobs=-1)
+
+grid_search.fit(X_train, y_train)
+
+print('Geriausi hiperparametrai:', grid_search.best_params_)
+print('Geriausias rezultatas:', grid_search.best_score_)
