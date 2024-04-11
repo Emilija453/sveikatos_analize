@@ -17,7 +17,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 Gyventojų Sveikatos Duomenų Analizė (Duomenų paruošimas mašininiam mokymui, mašininio mokymo modelių pasirinkimas,
-modelio mokymas ir įvertinimas , hiperparametrų derinimas ir modelio optimizavimas)
+modelio mokymas ir įvertinimas , hiperparametrų derinimas ir modelio optimizavimas).
 
 Naudojant LinearRegression:
 
