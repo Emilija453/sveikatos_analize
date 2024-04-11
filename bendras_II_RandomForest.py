@@ -46,5 +46,5 @@ grid_search = GridSearchCV(estimator=RandomForestRegressor(random_state=42),
 
 grid_search.fit(X_train, y_train)
 
-print('Geriausi hiperparametrai:', grid_search.best_params_)
-print('Geriausias rezultatas:', grid_search.best_score_)
+print('Best hyperparameters:', grid_search.best_params_)
+print('Best result:', grid_search.best_score_)
