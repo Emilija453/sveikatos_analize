@@ -1,7 +1,11 @@
 Komandinis darbas, sveikatos indekso analizė:
+
 ⫸ Visos šalys
+
 ⫸ Baltijos šalys
+
 ⫸ Skandinavijos šalys
+
 ⫸ Pateikti grafikai ir vizualizacijos programa
 
 
