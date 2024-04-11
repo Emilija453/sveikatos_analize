@@ -16,7 +16,7 @@ Gyventojų Sveikatos Duomenų Analizė (Duomenų paruošimas mašininiam mokymui
 modelio mokymas ir įvertinimas , hiperparametrų derinimas ir modelio optimizavimas)
 
 Naudojant LinearRegression:
-![linearregressionok.png](..%2F..%2F..%2FDesktop%2FNew%20folder%2Flinearregressionok.png)
+![linearregressionok.png](linearregressionok.png)
 
 Modelio metrikų ivertinimas:
 
@@ -50,7 +50,7 @@ The best silhouette score is with 3 clusters
 
 Naudojant RandomForest:
 
-![randomforest.png](..%2F..%2F..%2FDesktop%2FNew%20folder%2Frandomforest.png)
+![randomforest.png](randomforest.png)
 
 Modelio metrikų ivertinimas:
 
@@ -61,7 +61,7 @@ Best result: -0.006810983113629083
 
 Naudojant DBSCAN:
 
-![dbscan.png](..%2F..%2F..%2FDesktop%2FNew%20folder%2Fdbscan.png)
+![dbscan.png](dbscan.png)
 
 
 
