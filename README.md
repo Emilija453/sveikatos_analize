@@ -16,7 +16,7 @@ ______________________________________________________________________
 
 
 ______________________________________________________________________
-Gyventojų Sveikatos Duomenų Analizė (Duomenų paruošimas mašininiam mokymui, mašininio mokymo modelių pasirinkimas,
+Gyventojų sveikatos duomenų analizė (duomenų paruošimas mašininiam mokymui, mašininio mokymo modelių pasirinkimas,
 modelio mokymas ir įvertinimas , hiperparametrų derinimas ir modelio optimizavimas).
 
 Naudojant LinearRegression:
