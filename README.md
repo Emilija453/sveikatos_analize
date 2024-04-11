@@ -29,7 +29,7 @@ Number of CV Scores used in Average:  5
 
 Naudojant K-means:
 
-![K-means.png](..%2F..%2F..%2FDesktop%2FNew%20folder%2FK-means.png)
+![K-means.png](K-means.png)
 
 Modelio metrikų ivertinimas:
 
