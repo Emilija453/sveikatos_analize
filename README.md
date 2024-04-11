@@ -23,7 +23,7 @@ Naudojant LinearRegression:
 
 ![linearregressionok.png](linearregressionok.png)
 
-Modelio metrikų ivertinimas:
+Modelio metrikų įvertinimas:
 
 
 
@@ -45,7 +45,7 @@ Naudojant K-means:
 
 ![K-means.png](K-means.png)
 
-Modelio metrikų ivertinimas:
+Modelio metrikų įvertinimas:
 
 ⫸ MSE 0.021261494126798057
 
@@ -84,7 +84,7 @@ Naudojant RandomForest:
 
 ![randomforest.png](randomforest.png)
 
-Modelio metrikų ivertinimas:
+Modelio metrikų įvertinimas:
 
 ⫸ Best hyperparameters: {'max_depth': None, 'n_estimators': 300}
 
@@ -96,7 +96,7 @@ Naudojant LogisticRegression:
 
 ![ROCcurve.png](ROCcurve.png)
 
-Modelio metrikų ivertinimas:
+Modelio metrikų įvertinimas:
 
 ⫸ AUC: 0.9805760953537138
 
