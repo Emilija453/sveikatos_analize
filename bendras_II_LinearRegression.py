@@ -7,6 +7,7 @@ from sklearn.model_selection import KFold, cross_val_score
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.feature_selection import RFE
+from math import sqrt
 
 df = pd.read_csv('health-index-1.csv')
 
@@ -34,8 +35,10 @@ y_pred = model.predict(X_test)
 
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
+rmse = sqrt(mean_squared_error(y_test, y_pred))
 print('MSE: ', mse)
 print('R2: ', r2)
+print('RMSE: ', rmse)
 
 x_Lithuania = df_filtered_sorted[['year', 'country']]
 X_country = column_trans.transform(df_filtered_sorted[['country', 'year']])
@@ -46,8 +49,7 @@ n_features_optimal = 10
 rfe = RFE(model, n_features_to_select=n_features_optimal)
 rfe = rfe.fit(X_train, y_train)
 y_pred = model.predict(X_test)
-r2 = r2_score(y_test, y_pred)
-print('r2 score:', r2)
+
 
 
 k_folds = KFold(n_splits= 5, shuffle=True, random_state=42)
